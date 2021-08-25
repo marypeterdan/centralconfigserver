@@ -1,0 +1,13 @@
+server:
+  port: 9292
+
+
+spring:
+  application:
+    name: natwest-configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/marypeterdan/natwest-configserver
+          clone-on-start: true
